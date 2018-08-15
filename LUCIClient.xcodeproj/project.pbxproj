@@ -52,7 +52,6 @@
 		6C9922EF211DA6720032156F /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9922EE211DA6720032156F /* OptionsViewController.swift */; };
 		6C9922F1211DA67E0032156F /* AddStationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9922F0211DA67E0032156F /* AddStationViewController.swift */; };
 		6C9922F3211DA68C0032156F /* ChooseStationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9922F2211DA68C0032156F /* ChooseStationViewController.swift */; };
-		6CE619B621237E01007581D9 /* iOSDropDown.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CE619B521237E01007581D9 /* iOSDropDown.framework */; };
 		E5B8550EFF6D9B605694C75D /* Pods_LUCIClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 248C4724C81BB6C487B1EC5E /* Pods_LUCIClient.framework */; };
 /* End PBXBuildFile section */
 
@@ -108,7 +107,6 @@
 		6C9922EE211DA6720032156F /* OptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsViewController.swift; sourceTree = "<group>"; };
 		6C9922F0211DA67E0032156F /* AddStationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStationViewController.swift; sourceTree = "<group>"; };
 		6C9922F2211DA68C0032156F /* ChooseStationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseStationViewController.swift; sourceTree = "<group>"; };
-		6CE619B521237E01007581D9 /* iOSDropDown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = iOSDropDown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8020EAC5078F128B1F4B4F7 /* Pods-LUCIClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LUCIClient.release.xcconfig"; path = "Pods/Target Support Files/Pods-LUCIClient/Pods-LUCIClient.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -117,7 +115,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6CE619B621237E01007581D9 /* iOSDropDown.framework in Frameworks */,
 				E5B8550EFF6D9B605694C75D /* Pods_LUCIClient.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,7 +238,6 @@
 		73A91674FACD70B8EBF17624 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6CE619B521237E01007581D9 /* iOSDropDown.framework */,
 				248C4724C81BB6C487B1EC5E /* Pods_LUCIClient.framework */,
 			);
 			name = Frameworks;
@@ -268,7 +264,6 @@
 				6C64848F211C26C500293DCE /* Frameworks */,
 				6C648490211C26C500293DCE /* Resources */,
 				2ACD8E5BB0A95D2629ABA016 /* [CP] Embed Pods Frameworks */,
-				AAC1A6FFF981CB101AFE063E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -370,7 +365,6 @@
 				"${BUILT_PRODUCTS_DIR}/TPCircularBuffer/TPCircularBuffer.framework",
 				"${BUILT_PRODUCTS_DIR}/UICheckbox.Swift/UICheckbox_Swift.framework",
 				"${BUILT_PRODUCTS_DIR}/VerticalSteppedSlider/VerticalSteppedSlider.framework",
-				"${BUILT_PRODUCTS_DIR}/iOSDropDown/iOSDropDown.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -379,7 +373,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TPCircularBuffer.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UICheckbox_Swift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VerticalSteppedSlider.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/iOSDropDown.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -402,21 +395,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AAC1A6FFF981CB101AFE063E /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LUCIClient/Pods-LUCIClient-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -580,9 +558,9 @@
 			baseConfigurationReference = 111968DB3AEF5AC2388ABDE5 /* Pods-LUCIClient.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = M2CP6484K5;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6ZFM9CL2BE;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"${PODS_ROOT}/",
@@ -594,10 +572,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.luci.client;
+				PRODUCT_BUNDLE_IDENTIFIER = com.skmap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "f30d4e60-402e-4fc3-8f17-63b2e4278632";
-				PROVISIONING_PROFILE_SPECIFIER = "LU-adh";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "LUCIClient/LUCIClient-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -609,9 +587,9 @@
 			baseConfigurationReference = E8020EAC5078F128B1F4B4F7 /* Pods-LUCIClient.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = M2CP6484K5;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6ZFM9CL2BE;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"${PODS_ROOT}/",
@@ -623,10 +601,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.luci.client;
+				PRODUCT_BUNDLE_IDENTIFIER = com.skmap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "f30d4e60-402e-4fc3-8f17-63b2e4278632";
-				PROVISIONING_PROFILE_SPECIFIER = "LU-adh";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "LUCIClient/LUCIClient-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
